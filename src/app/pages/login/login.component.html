@@ -1,0 +1,34 @@
+
+<div class="login h-screen">
+    <div class="flex h-full">
+      <div class="w-1/2 overflow-hidden left">
+        <video class="h-screen" autoplay muted loop >
+          <source src="../../../assets/videos/pexels-kindel-media-6774635.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+      <div class="w-1/2 p-7 right relative">
+        <div class="contentForm">
+          <div class="image flex justify-center align-middle">
+            <img  class="w-14" src="../../../assets/images/gif/profile.gif" alt="">
+          </div>
+          <h1 class="text-center text-2xl mt-7">Welcome To Portfolio Dashboard</h1>
+        <form class="mt-8">
+          <div class="form-group">
+            <label class="block" for="email">Email</label>
+            <input class="w-full bg-slate-100 border-spacing-0" id="email" type="email" pInputText [(ngModel)]="email" name="email" required>
+          </div>
+          <div class="form-group mt-4">
+            <label class="block" for="password">Password</label>
+            <p-password [(ngModel)]="password" [toggleMask]="true" [feedback]="false" [minlength]="6"></p-password>
+          </div>
+          <button class="mt-4 bg-blue-700" type="submit" pButton (click)="onSubmit()">Login</button>
+        </form>
+        </div>
+        <div class="default-foot p-7 flex justify-between bg-zinc-100 p-1 absolute bottom-0 right-0 w-100">
+          <p>2023 © Mohamed Sabry</p>
+          <p><a target="_blank" href="https://www.linkedin.com/in/mohamed-sabry-abdelmordy-b012441b0/">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+  </div>

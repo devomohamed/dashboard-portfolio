@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+  box-sizing: border-box;
+}
+
+.w-100{
+  width: 100% !important;
+}
+.w-50{
+  width: 50% !important;
+}
