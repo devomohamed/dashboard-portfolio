@@ -16,7 +16,7 @@
   }
   .right{
     .contentForm{
-      margin-top: 50%;
+      margin-top: 3rem;
 
       ::ng-deep p-password{
         & > div , & > div input{
@@ -31,10 +31,55 @@
   }
 }
 
-@media (min-width:992px) {
-  .right{
-    .contentForm{
-      transform: translateY(-50%);
+// @media (min-width:992px) {
+//   .right{
+//     .contentForm{
+//       transform: translateY(-50%);
+//     }
+//   }
+// }
+
+@media (max-width:750px) {
+  .login{
+
+    position: relative;
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: url('../../../assets/images/bacckgrounds/close-up-pen-market-research.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    }
+    &::before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      z-index: 0;
+    }
+
+    .left{
+      display: none;
+    }
+    .right{
+      width: 100%;
+      .contentForm{
+        margin-top: 0 !important;
+        label,h1{
+          color: #fff;
+        }
+
+      }
     }
   }
+
 }
